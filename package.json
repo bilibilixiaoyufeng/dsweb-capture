@@ -1,0 +1,24 @@
+{
+  "name": "dsweb-capture",
+  "version": "0.1.0",
+  "description": "把 chat.deepseek.com 的历史对话导出成本地文件（含思考过程、分支树、图片附件）",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "playwright-core": "^1.49.0"
+  },
+  "scripts": {
+    "start": "node capture.mjs --help",
+    "capture": "node capture.mjs --all",
+    "fix": "node fix-attachments.mjs"
+  },
+  "keywords": [
+    "deepseek",
+    "export",
+    "backup",
+    "chat"
+  ]
+}
